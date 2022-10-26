@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pimk Diamond</title>
+  <style>
+    body {
+      background-image: radial-gradient(circle at 10% 20%, rgb(251, 222, 238) 15.6%, rgb(206, 201, 226) 80.3%);
+      color: #fff;
+      width: 50%;
+      margin: 60px auto;
+      font-family:  Arial, Helvetica, sans-serif;
+    }
+
+    div {
+      background-color: rgb(235, 188, 232);
+      
+    }
+
+    h1{
+      text-align: center;
+      font-weight: bold;
+      padding: 20px;
+      
+
+    }
+
+    h2{
+      text-align: center;
+      border: 1px solid #fff;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+
+    img{
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 100%;
+
+    }
+    p{
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 20px 0 10px;
+    }
+
+    button{
+      display: block;
+      margin: 50px auto;
+      background:#f18fac;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px rgba (0,0,0,0.3);
+      transition: all 200ms ease-in-out;
+
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .container{
+      max-width:600px;
+      margin: o auto;
+      padding: 30px 60px;
+    }
+
+    .read-more {
+      color:rgb(34, 10, 71);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .read-more:hover{
+      text-decoration: underline;
+    }
+
+    .footer{
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>
+    Pink Diamond
+  </h1>
+  <h2>
+    Faint pink to deep pink
+  </h2>
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/101/original/pngegg.png?1664448066" alt="Diamond"
+  width = "200"
+  />
+  <p>
+    Pink diamond is a type of diamond that has pink color. The source of their pink color is greatly debated in the gemological world but it is most commonly attributed to plastic deformation that these diamonds undergo during their formation.
+Pink diamonds belong to a subcategory of diamonds called color diamonds, the generic name for all diamonds that exhibit any sort of color. Pink diamonds range from flawless to included, as do white diamonds.
+  </p>
+  <br />
+  <a href="https://en.wikipedia.org/wiki/Pink_diamond"
+    target="_blank"
+    class="read-more">
+    📖 Read more on Wikipedia
+  </a>
+  <button class="check-button">
+    👆🏼 Check availability
+  </button>
+  <p class="footer">
+    This page was built by Anastasiia 2022
+
+  </p>
+
+  </div>
+
+  <script>
+    function check(){
+      let name = prompt ("What is your name?");
+      let email = prompt ("What is your email?");
+      let emoji = prompt ("What is your emoji?");
+
+      alert ("Thank you, " + name + "! We'll contact you shortly" + emoji );
+    }
+
+    let checkButton = document.querySelector(".check-button");
+    checkButton.addEventListener("click", check);
+  </script>
+</body>
+</html>
